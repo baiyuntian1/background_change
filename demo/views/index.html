@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="/css/background.css">
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+	<div class="div4"></div>
+</body>
+<script type="text/javascript" src="/inc/jquery.min.js"></script>
+<script type="text/javascript" src="/inc/background_change.js"></script>
+<script type="text/javascript">
+$(function(){
+	var opt = {
+		obj_arr : ['div.div1','div.div2','div.div3','div.div4'],		//判定变换背景的盒子名称的数组，
+		src_arr : ['/img/bg0.jpg','/img/bg1.jpg','/img/bg2.jpg','/img/bg0.jpg']		//背景路径数组
+	};
+	background_change.init(opt);
+})
+</script>
+</html>

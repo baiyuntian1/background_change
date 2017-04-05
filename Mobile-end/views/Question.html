@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <%include comm/head.html%>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="Question">
+    <%include comm/top.html%>
+    <section class="bao">
+        <section class="answer mar">
+            <div>
+                <p class="p1"><span class="special">01</span><span class="line"></span>如何通过爱传播赚钱？</p>
+                <p class="p2">通过在服务号里做任务获得i豆，i豆可以兑
+                            换成现金。（i豆可直接兑换到微信钱包中
+                            ，微信钱包捆绑银行卡后可直接存到银行
+                            卡中）</p>
+            </div>
+            <div>
+                <p class="p1"><span class="special">02</span><span class="line"></span>如何通过爱传播赚钱？</p>
+                <p class="p2">通过在服务号里做任务获得i豆，i豆可以兑
+                            换成现金。（i豆可直接兑换到微信钱包中
+                            ，微信钱包捆绑银行卡后可直接存到银行
+                            卡中）</p>
+            </div>
+            <div>
+                <p class="p1"><span class="special">03</span><span class="line"></span>如何通过爱传播赚钱？</p>
+                <p class="p2">通过在服务号里做任务获得i豆，i豆可以兑
+                            换成现金。（i豆可直接兑换到微信钱包中
+                            ，微信钱包捆绑银行卡后可直接存到银行
+                            卡中）</p>
+            </div>
+            <div class="bottom">
+                <p class="p1"><span class="special">04</span><span class="line"></span>如何通过爱传播赚钱？</p>
+                <p class="p2">通过在服务号里做任务获得i豆，i豆可以兑
+                            换成现金。（i豆可直接兑换到微信钱包中
+                            ，微信钱包捆绑银行卡后可直接存到银行
+                            卡中）</p>
+            </div>
+        </section>
+        <%include comm/footer.html%>
+    </section>
+
+    <script type="text/javascript" src="/inc/zepto.min.js"></script>
+    <script type="text/javascript" src="/inc/fx.js"></script>
+    <script type="text/javascript" src="/inc/fx_methods.js"></script>
+    <script type="text/javascript" src="/jq/userControl.js"></script>
+    <script type="text/javascript" src="/jq/landscape_mask.js"></script>
+    <script type="text/javascript" src="/jq/mobile_stop_moved.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var opt = {
+             selector: "section.bao", // 容器盒选择器（需要在样式表中将此盒定高），无默认值
+             scroll: true, // 盒内可滚动，默认true
+            resize_toWindow: true // 将容器盒自动设置为有效窗口高度(window.innerHeight)，并监听窗口大小改变——解决ios safari浏览器底部工具栏遮挡页面的问题
+        };
+        mobile_stop_moved.init(opt);
+    });
+    </script>
+</body>
+</html>

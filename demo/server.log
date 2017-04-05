@@ -1,0 +1,13 @@
+ Listening on http://127.0.0.1:8080
+127.0.0.1 - GET / HTTP/1.1 200 291 - 14.734 ms
+127.0.0.1 - GET /views HTTP/1.1 303 - - 7.345 ms
+127.0.0.1 - GET /views/ HTTP/1.1 200 709 - 7.331 ms
+127.0.0.1 - GET /css/background.css HTTP/1.1 200 105 - 3.291 ms
+127.0.0.1 - GET /inc/background_change.js HTTP/1.1 200 2344 - 21.710 ms
+127.0.0.1 - GET /inc/jquery.min.js HTTP/1.1 200 97163 - 15.966 ms
+127.0.0.1 - GET /img/bg0.jpg HTTP/1.1 200 55038 - 4.888 ms
+127.0.0.1 - GET /img/bg1.jpg HTTP/1.1 200 192744 - 1.060 ms
+127.0.0.1 - GET /img/bg0.jpg HTTP/1.1 304 - - 6.539 ms
+127.0.0.1 - GET /img/bg2.jpg HTTP/1.1 200 232187 - 0.992 ms
+127.0.0.1 - GET /img/bg0.jpg HTTP/1.1 304 - - 4.569 ms
+127.0.0.1 - GET /img/bg1.jpg HTTP/1.1 304 - - 4.270 ms

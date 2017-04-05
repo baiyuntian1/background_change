@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%include ../comm/head.html%>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body class="error">
+    <%include ../comm/top.html%>
+    <section class="bao">
+        <section class="sorry mar"> 
+            <h2>对不起!页面出错!</h2>
+            <a href="">
+                <div class="to_shou"></div>
+            </a>
+            <div class="refresh"></div>
+        </section>
+        
+        <%include ../comm/footer.html%>
+    </section>
+
+    <script type="text/javascript" src="/inc/zepto.min.js"></script>
+    <script type="text/javascript" src="/inc/fx.js"></script>
+    <script type="text/javascript" src="/inc/fx_methods.js"></script>
+    <script type="text/javascript" src="/jq/userControl.js"></script>
+    <script type="text/javascript" src="/jq/landscape_mask.js"></script>
+    <script type="text/javascript" src="/jq/mobile_stop_moved.js"></script>
+    <script type="text/javascript" src="/jq/404.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var opt = {
+            selector: "section.bao", // 容器盒选择器（需要在样式表中将此盒定高），无默认值
+            scroll: true, // 盒内可滚动，默认true
+            resize_toWindow: true // 将容器盒自动设置为有效窗口高度(window.innerHeight)，并监听窗口大小改变——解决ios safari浏览器底部工具栏遮挡页面的问题
+        };
+        mobile_stop_moved.init(opt);
+
+        p404.init();
+    });
+    </script>
+</body>
+    
+</html>

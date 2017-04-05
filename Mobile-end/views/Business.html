@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%include comm/head.html%>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="Business">
+    <%include comm/top.html%>
+    <section class="bao mar">
+        <section class="platform">
+        	<p class="p1">
+        		商户自助投放平台<br> 
+				推广任务优化  <br>
+				高效精准移动互联网营销
+        	</p>
+        	<p class="p2">一个平台全部解决</p>
+        </section>
+        <section class="extension">
+        	<section class="left one">
+                <div class="Business_publicity"></div>
+	        </section>
+	        <section class="right two">
+	            <div class="Business_product"></div>
+	            <div class="Business_activity"></div>
+	        </section>
+	        <section class="left two">
+	            <div class="Business_sign_up"></div>
+	            <div class="Business_meeting"></div>
+	        </section>
+	        <section class="right one">	
+	            <div class="Business_wechat"></div>
+	        </section>
+	        <section class="left one">
+	            <div class="Business_app"></div>
+	        </section>
+	        <section class="right two">
+	            <div class="Business_cooperation"></div>
+	            <div class="Business_Mall"></div>
+	        </section>
+        </section>
+         
+        <section class="cooperation">
+        	<div></div>
+        	<p>商务合作</p>
+        	<div></div>
+        </section>
+        <section class="contact_us">	
+        	    <div>
+        	    	<p>公司名称</p><input type="text" name="company"  class="company landscape_mask_no_focus" />
+        	    </div>
+        	    <div>
+        	    	<p>联系电话</p><input type="text" name="phone" class="phone landscape_mask_no_focus" />
+        	    </div>
+        	    <div>
+        	    	<p>联&nbsp;&nbsp;系&nbsp;&nbsp;人</p><input type="text" name="name"  class="name landscape_mask_no_focus" />
+        	    </div>
+        	    <div>
+        	    	<p>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</p><input type="text" class="email landscape_mask_no_focus"  class="email"/>
+        	    </div>
+        	    <div>
+        	    	<p>验&nbsp;&nbsp;证&nbsp;&nbsp;码</p><input type="text" name="code"  class="code landscape_mask_no_focus"/><img id="Img" src="/captcha/create" alt="" class="yanzhen">
+        	    </div>
+        	    <input type="submit" value="提交" class="submit_btn" />
+        	        	
+        </section>
+        <%include comm/footer.html%>
+    </section>
+        <!--遮罩层-->
+        <div id="PromptLayer_white"></div>
+        <div id="PromptLayer">
+            <table>
+                <tr>
+                    <td class="PlaceContent"></td>
+                </tr>
+            </table>
+        </div>
+    <script type="text/javascript" src="/inc/zepto.min.js"></script>
+    <script type="text/javascript" src="/inc/fx.js"></script>
+    <script type="text/javascript" src="/inc/fx_methods.js"></script>
+    <script type="text/javascript" src="/jq/userControl.js"></script>
+    <script type="text/javascript" src="/jq/landscape_mask.js"></script>
+    <script type="text/javascript" src="/jq/mobile_stop_moved.js"></script>
+    <script type="text/javascript" src="/jq/Business.js"></script>
+    <script type="text/javascript" src="/jq/PromptLayer.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        Business.init();
+    });
+    </script>
+</body>
+</html>

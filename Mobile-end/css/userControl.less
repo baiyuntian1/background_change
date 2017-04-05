@@ -1,0 +1,151 @@
+/*
+	白梦超
+	20160530
+*/
+
+@import "common.less";
+
+section.mar {
+	margin-top: 17.6vw;
+}
+//头部公共样式
+section.html_top {
+	width: 100vw;
+	height: 17.6vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	div.top {
+		width: 100vw;
+		height: 17.6vw;
+		background: @color_fff;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		div.logo {
+			width: 29.2vw;
+			height: 17.6vw;
+			margin-left: 7vw;
+			float: left;
+			background: url(/images/logo.png)  0 0 no-repeat;
+			background-size: cover;
+		}
+		span.button.on {
+			width: 17.6vw;
+			height: 17.6vw;
+			float: right;
+			background: url(/images/button_01.png) 0 0 no-repeat;
+			background-size: cover;
+		}
+		span.button.out {
+			width: 17.6vw;
+			height: 17.6vw;
+			float: right;
+			background: url(/images/button_02.png) 0 0 no-repeat;
+			background-size: cover;
+		}
+	}
+	ul {
+		padding-top: 4.4vw;
+		width: 100vw;
+		height: 120vw;
+		background: @bg_color_nav;
+		position: absolute;
+		top:  -102.4vw;
+		z-index: 1;
+		.transition(top,0.5s,ease-in-out);
+		li {
+			height: 15.9vw;
+			width: 100vw;
+			font-size: 4.6vw;
+			line-height: 15.9vw;
+			text-align: center;
+			color: @color_fff;
+			p {
+				color: @color_fff;
+				font-size: 4.6vw;
+			}
+		}
+		li.on {
+			p {
+				width: 35vw;
+				margin-left: 32.5vw;
+				font-size: 4.6vw;
+				height: 15.9vw;
+				line-height: 15.9vw;
+				span.li_span1 {
+					width: 4.7vw;
+					float: left;
+					height: 7.9vw;
+					border-bottom: 1px solid @color_fff;
+				}
+				span.li_span2 {
+					width: 25.6vw;
+					float: left;
+					color: @color_fff;
+				}
+			}
+		}
+		li.first {
+			overflow: hidden;
+			height: 15.9vw;		
+		}
+		li.on.first {
+			overflow: hidden;
+			height: 15.9vw;
+			p {
+				width: 25vw;
+				margin-left: 37.5vw;
+				font-size: 4.6vw;
+				height: 15.9vw;
+				line-height: 15.9vw;
+				span.li_span1 {
+					width: 4.7vw;
+					float: left;
+					height: 7.9vw;
+					border-bottom: 1px solid @color_fff;
+				}
+				span.li_span2 {
+					width: 15.6vw;
+					float: left;
+					color: @color_fff;
+				}
+			}
+		}
+		
+	}
+	ul.show {
+		position: absolute;
+		top:  17.6vw;
+		.transition(top,0.5ss,ease-in-out);
+	}
+}
+
+//底部公共样式
+section.html_foot {
+	width: 100vw;
+	height: 28.6vw;
+	background: #1c4062;
+	p {
+		font-size: 3.4vw;
+		line-height: 6vw;
+		padding-top: 8.4vw;
+		text-align: center;
+		color: @color_fff;
+	}
+}
+
+//回到顶部样式
+section.html_to_top {
+	z-index: 10;
+	display: block;
+	width: 13.5vw;
+	height: 13.5vw;
+	background: url(/images/to_top.png) 0 0 no-repeat;
+	background-size: cover;
+	position: fixed;
+	right: 7vw;
+	bottom: 24vw;
+}

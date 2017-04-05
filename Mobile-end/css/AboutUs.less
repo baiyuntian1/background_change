@@ -1,0 +1,121 @@
+/*
+	陈斌
+	20160531
+*/
+//关于我们页样式
+body.AboutUs{
+	section.bor{
+		height: 100vh;
+	}
+	//banner样式
+	.central .AboutUs_banner{
+		width: 100vw;
+		overflow: hidden;
+	}
+	.loop(@count) when (@count<4){
+        .loop((@count+1));
+        & .li@{count}{
+			background: url("/images/AboutUs_banner_@{count}.png") 0 0 no-repeat;
+			background-size: cover;
+		}
+	}
+	.central .AboutUs_banner .pic_ul{
+		position: relative;
+        height: 58vw;
+        overflow: hidden;
+        left: 0px;
+        & li{
+	        width: 100vw;
+	        height: 58vw;
+	        float:left;
+		}
+		.loop(1);
+	}
+
+	.central .AboutUs_banner .point_ul{
+	    position: relative;
+	    top: -7vw;
+        width: 100vw;
+        text-align: center;
+        & li{
+        	width: 3vw;
+			height: 3vw;
+	        border-radius: 1.5vw;
+	        background-color: @color_fff;
+	        background-size: cover;
+	        margin-right: 2vw;
+	        .inline-block()
+        }
+	}
+	.central .AboutUs_banner .point_ul .selected{
+		width: 10.4vw;
+		background-color: @color_fff;
+	}
+	//公司介绍样式
+	.central .company{
+		padding-bottom: 8.2vw;
+		border-bottom:0.1px solid #bdb9b8;
+		margin-top:9.1vw;
+	}
+	//专业守则样式
+	.central .company p{
+		margin:0 6.3vw;
+	}
+    .central .company .p1{
+	    font-weight: bold;
+		color: #475168;
+		line-height: 7.2vw;
+		font-size: 4vw;
+	}
+	.central .company .p2{
+		margin-top: 1.2vw;
+		color: #736f6e;
+		line-height: 5.4vw;
+		font-size: 3.4vw;
+	}
+	.central .about_us .guidelines{
+		font-weight: bold;
+		margin-top: 4vw;
+		text-align: center;
+		line-height: 5vw;
+		font-size: 4vw;
+		color: #475168;
+		margin-bottom: 10.9vw;
+	} 
+    .central .about_us .about{
+    	margin-top: 8.5vw;
+		text-align: center;
+		& .p1{
+			margin-top: 8vw;
+			line-height: 5vw;
+			font-size: 4vw;
+			color: #ff6c60;
+		}
+		& .p2{
+			margin-top: 4.2vw;
+			line-height: 5.4vw;
+			font-size: 3.4vw;
+			color: #736f6e;
+			margin-bottom: 12.1vw;
+		}
+    }
+    .central .about_us .about div{
+		width: 64.7vw;
+		height: 64.7vw;
+		margin: 0 auto;
+	}
+    .central .about_us .about .merchants{
+    	background: url("/images/about_us_01.png") 0 0 no-repeat;
+		background-size: cover;
+    }
+    .central .about_us .about .marketing{
+    	background: url("/images/about_us_02.png") 0 0 no-repeat;
+		background-size: cover;
+    }
+    .central .about_us .about .professional{
+    	background: url("/images/about_us_03.png") 0 0 no-repeat;
+		background-size: cover;
+    }
+
+	
+}

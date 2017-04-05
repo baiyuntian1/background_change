@@ -1,0 +1,529 @@
+/*
+	白梦超
+	20160530
+*/
+
+@import "common.less";
+
+//首页样式
+body.index {
+	section.bao {
+		height: 100vh;
+	
+	//顶部大图样式
+	section.banner {
+		position: relative;
+		width: 100vw;
+		height: 61.6vw;
+		background: url(/images/banner_bg.jpg) 0 0 no-repeat;
+		background-size: cover;
+		div.banner_01{
+			width: 52vw;
+			height: 40vw;
+			background: url(/images/banner_01.png) 0 0 no-repeat;
+			background-size: cover;
+			position: absolute;
+			top:4.5vw;
+			left: 21vw;
+			opacity: 0;
+			.transition(all,0s);
+		}
+		div.banner_01.show {
+			top:7.5vw;
+			opacity: 1;
+			.transition(all,1s,ease-in-out);
+		}
+		div.banner_02{
+			width: 45vw;
+			height: 28vw;
+			background: url(/images/banner_02.png) 0 0 no-repeat;
+			background-size: cover;
+			position: absolute;
+			top:23.5vw;
+			left: 48vw;
+			opacity: 0;
+			.transition(all,0s);
+		}
+		div.banner_02.show {
+			left: 44vw;
+			opacity: 1;
+			.transition(all,1s,ease-in-out,0.5s);
+		}
+		div.banner_03{
+			width: 28vw;
+			height: 19vw;
+			background: url(/images/banner_03.png) 0 0 no-repeat;
+			background-size: cover;
+			position: absolute;
+			top:33vw;
+			left: 10vw;
+			opacity: 0;
+			.transition(all,0s);
+		}
+		div.banner_03.show {
+			left: 14vw;
+			opacity: 1;
+			.transition(all,1s,ease-in-out,1s);
+		}
+		div.banner_04{
+			width: 12vw;
+			height: 17vw;
+			background: url(/images/banner_04.png) 0 0 no-repeat;
+			background-size: cover;
+			position: absolute;
+			top:42vw;
+			left: 34vw;
+			opacity: 0;
+			.transition(all,0s);
+		}
+		div.banner_04.show {
+			top:39vw;
+			opacity: 1;
+			.transition(all,1s,ease-in-out,1.5s);
+		}
+	}
+	//高效的移动互联网营销样式
+	section.marketing {
+		position: relative;
+		width: 100vw;
+		height: 68.4vw;
+		h2 {
+			width: 93.7vw;
+			height: 4vw;
+			margin-left: 6.3vw;
+			margin-top: 9.7vw;
+			font-size: 4vw;
+			line-height: 4vw;
+			margin-bottom: 3.4vw;
+			color: @font_color_hover;
+			font-weight: normal;
+			opacity: 0;
+		}
+		h2.show {
+			opacity: 1;
+			.transition(all,1s,linear,1s);
+		}
+		p {
+			font-size: 3.3vw;
+			line-height: 5.3vw;
+			width: 87.4vw;
+			margin-left: 6.3vw;
+			opacity: 0;
+		}
+		p.show {
+			opacity: 1;
+			.transition(all,1s,linear,1s);
+		}
+		div {
+			width: 59.3vw;
+			height: 48vw;
+			background: url(/images/phone.png) 0 0 no-repeat;
+			background-size: cover;
+			position: absolute;
+			top: 30.2vw;
+			left: 24.8vw;
+			z-index: 2;
+			opacity: 0;
+		}
+		div.show {
+			opacity: 1;
+			.transition(all,1s,linear,1s);
+		}
+	}
+	//病毒裂变式传播方式样式
+	section.spread {
+		width: 100vw;
+		height: 115vw;
+		background: @bg_gray;
+		border-top: 1px solid @line_color;
+		border-bottom: 1px solid @line_color;
+		position: relative;
+		h2 {
+			font-size: 4vw;
+			line-height: 4vw;
+			margin-left: 6.3vw;
+			width: 87.4vw;
+			color: @font_color_hover;
+			font-weight: normal;
+			margin-top: 19.4vw;
+			text-align: center;
+			margin-bottom: 3.4vw;
+			opacity: 0;
+		}
+		h2.show {
+			opacity: 1;
+			.transition(all,2s,linear,2s);
+		}
+		p {
+			width: 87.4vw;
+			margin-left: 6.3vw;
+			font-size: 3.4vw;
+			line-height: 5.6vw;
+			text-align: center;
+			opacity: 0;
+		}
+		p.show {
+			opacity: 1;
+			.transition(all,2s,linear,2s);
+		}
+		div.phone {
+			div.phone_bg {
+				width: 60vw;
+				height: 35vw;
+				background: url(/images/phone_bg.png) 0 0 no-repeat;
+				background-size: cover;
+				position: absolute;
+				top: 56vw;
+				left: 20vw;
+				opacity: 0;
+			}
+			div.phone_bg.show {
+				opacity: 1;
+				.transition(all,1s,ease-in-out,0.5s);
+			}
+			div.phone_01 {
+				width: 9vw;
+				height: 18.8vw;
+				background: url(/images/phone_04.png) 0 0 no-repeat;
+				background-size: cover;
+				position: absolute;
+				top: 56vw;
+				left: 16vw;
+				opacity: 0;
+			}
+			div.phone_01.show {
+				opacity: 1;
+				left: 20vw;
+				.transition(all,1s,ease-in-out,0.5s);
+			}
+			div.phone_02 {
+				width: 8vw;
+				height: 21vw;
+				background: url(/images/phone_02.png) 0 0 no-repeat;
+				background-size: cover;
+				position: absolute;
+				top: 56vw;
+				left: 75vw;
+				opacity: 0;
+			}
+			div.phone_02.show {
+				left: 71vw;
+				opacity: 1;
+				.transition(all,1s,ease-in-out,0.5s);
+			}
+			div.phone_03 {
+				width: 28vw;
+				height: 9vw;
+				background: url(/images/phone_03.png) 0 0 no-repeat;
+				background-size: cover;
+				position: absolute;
+				top: 97vw;
+				left: 35vw;
+				opacity: 0;
+			}
+			div.phone_03.show {
+				top: 93vw;
+				opacity: 1;
+				.transition(all,1s,ease-in-out,0.5s);
+			}
+			div.phone_line {
+				width: 50vw;
+				height: 38vw;
+				background: url(/images/phone_line.png) 0 0 no-repeat;
+				background-size: cover;
+				position: absolute;
+				top: 60.5vw;
+				left: 25vw;
+				opacity: 0;
+			}
+			div.phone_line.show {
+				opacity: 1;
+				.transition(all,1s,ease-in-out,1.5s);
+			}
+			ul.phone_ul {
+				li {
+					width: 2.8vw;
+					height: 4.7vw;
+					background: url(/images/gril.png) 0 0 no-repeat;
+					background-size: cover;
+					opacity: 0;
+				}
+				li.show {
+					opacity: 1;
+					.transition(all,1s,ease-in-out,2.5s);
+				}
+				li.tu_1 {
+					position: absolute;
+					top: 62vw;
+					left: 24vw;
+				}
+				li.tu_2 {
+					position: absolute;
+					top: 57.5vw;
+					left: 44.5vw;
+				}
+				li.tu_3 {
+					position: absolute;
+					top: 63.5vw;
+					left: 59vw;
+				}
+				li.tu_4 {
+					position: absolute;
+					top: 61.5vw;
+					left: 73vw;
+				}
+				li.tu_5 {
+					position: absolute;
+					top: 68vw;
+					left: 50.6vw;
+				}
+				li.tu_6 {
+					position: absolute;
+					top: 76vw;
+					left: 32vw;
+				}
+				li.tu_7 {
+					position: absolute;
+					top: 81vw;
+					left: 43vw;
+				}
+				li.tu_8 {
+					position: absolute;
+					top: 92.5vw;
+					left: 44.5vw;
+				}
+				li.tu_9 {
+					width: 3.5vw;
+					height: 3.6vw;
+					background: url(/images/boy.png) 0 0 no-repeat;
+					background-size: cover;
+					position: absolute;
+					top: 70vw;
+					left: 28.5vw;
+				}
+				li.tu_10 {
+					width: 3.5vw;
+					height: 3.6vw;
+					background: url(/images/boy.png) 0 0 no-repeat;
+					background-size: cover;
+					position: absolute;
+					top: 66vw;
+					left: 34vw;
+				}
+				li.tu_11 {
+					width: 3.5vw;
+					height: 3.6vw;
+					background: url(/images/boy.png) 0 0 no-repeat;
+					background-size: cover;
+					position: absolute;
+					top: 71.2vw;
+					left: 35.3vw;
+				}
+				li.tu_12 {
+					width: 3.5vw;
+					height: 3.6vw;
+					background: url(/images/boy.png) 0 0 no-repeat;
+					background-size: cover;
+					position: absolute;
+					top: 65vw;
+					left: 47.4vw;
+				}
+				li.tu_13 {
+					width: 3.5vw;
+					height: 3.6vw;
+					background: url(/images/boy.png) 0 0 no-repeat;
+					background-size: cover;
+					position: absolute;
+					top: 74vw;
+					left: 40.5vw;
+				}
+				li.tu_14 {
+					width: 3.5vw;
+					height: 3.6vw;
+					background: url(/images/boy.png) 0 0 no-repeat;
+					background-size: cover;
+					position: absolute;
+					top: 75vw;
+					left: 56.2vw;
+				}
+			}
+		}
+	}
+	//四个广告位样式
+	section.ad {
+		width: 100vw;
+		height: 126vw;
+		border-bottom: 1px solid @line_color;
+		h2 {
+			width: 87.4vw;
+			margin-left: 6.3vw;
+			height: 4vw;
+			margin-top: 13vw;
+			span {
+				width: 18.6vw;
+				height: 2vw;
+				border-bottom: 1px dashed #a7a3a1;
+				float: left;
+			}
+			p {
+				width: 50.2vw;
+				float: left;
+				font-size: 4vw;
+				line-height: 4vw;
+				text-align: center;
+				font-weight: normal;
+				color: @font_color_hover;
+			}
+		}
+		ul {
+			width: 86vw;
+			margin-left: 7vw;
+			margin-top: 10vw;
+			li {
+				width: 43vw;
+				height: 43vw;
+				float: left;
+				div {
+					width: 20.7vw;
+					height: 20.7vw;
+					margin-left: 11.1vw;
+					margin-top: 7.2vw;
+					transform:rotate(0deg);
+				}
+				p {
+					width: 43vw;
+					margin-top: 4.5vw;
+					text-align: center;
+					font-size: 3.6vw;
+					line-height: 3.6vw;
+					color: @color_fff;
+
+				}
+			}
+			li.ad_li1 {
+				background: @bg_color_li;
+				div {
+					background: url(/images/ad_01.png) 0 0 no-repeat;
+					background-size: cover;
+				}
+				div.show {
+					transform:rotate(360deg);
+					.transition(all,1.5s,ease-in-out,1s)
+				}
+			}
+			li.ad_li2 {
+				background: @bg_color_nav;
+				div {
+					background: url(/images/ad_02.png) 0 0 no-repeat;
+					background-size: cover;
+				}
+				div.show {
+					transform:rotate(360deg);
+					.transition(all,1.5s,ease-in-out,1.5s)
+				}
+			}
+			li.ad_li3 {
+				background: @bg_color_nav;
+				div {
+					background: url(/images/ad_03.png) 0 0 no-repeat;
+					background-size: cover;
+				}
+				div.show {
+					transform:rotate(360deg);
+					.transition(all,1.5s,ease-in-out,2s)
+				}
+			}
+			li.ad_li4 {
+				background: @bg_color_li;
+				div {
+					background: url(/images/ad_04.png) 0 0 no-repeat;
+					background-size: cover;
+				}
+				div.show {
+					transform:rotate(360deg);
+					.transition(all,1.5s,ease-in-out,2.5s)
+				}
+			}
+			&:after {
+				.clear();
+			}
+		}
+	}
+	//底部CPR部分样式
+	section.data {
+		width: 100vw;
+		height: 107vw;
+		position: relative;
+		p {
+			margin-top: 12vw;
+			font-size: 4vw;
+			line-height: 6.4vw;
+			width: 87.4vw;
+			margin-left: 6.3vw;
+			text-align: center;
+			opacity: 0;
+		}
+		p.show {
+			opacity: 1;
+			.transition(all,2s,linear,1.5s);
+		}
+		div.data_bg {
+			width: 65vw;
+			height: 40vw;
+			position: absolute;
+			background: url(/images/data_bg.png) 0 0 no-repeat;
+			background-size: cover;
+			top: 42.5vw;
+			left: 24vw;
+			opacity: 0;
+		}
+		div.data_bg.show {
+			opacity: 1;
+			.transition(all,1s)
+		}
+		div.data_color {
+			width: 0;
+			height: 25vw;
+			position: absolute;
+			background: url(/images/data_color.png) 0 0 no-repeat;
+			background-size: cover;
+			top: 50.5vw;
+			left: 29vw;
+		}
+		div.data_color.show {
+			width: 54vw; 
+			.transition(all,1s,ease-in-out,1s)
+		}
+		div.data_lef {
+			width: 36vw;
+			height: 21vw;
+			position: absolute;
+			background: url(/images/data_lef.png) 0 0 no-repeat;
+			background-size: cover;
+			top: 28vw;
+			left: 13vw;
+			opacity: 0;
+		}
+		div.data_lef.show {
+			top: 32vw;
+			opacity: 1;
+			.transition(all,1s,ease-in-out,2s)
+		}
+		div.data_rig {
+			width: 40vw;
+			height: 24vw;
+			position: absolute;
+			background: url(/images/data_rig.png) 0 0 no-repeat;
+			background-size: cover;
+			top: 30.5vw;
+			left: 50vw;
+			opacity: 0;
+		}
+		div.data_rig.show {
+			opacity: 1;
+			left: 46vw;
+			.transition(all,1s,ease-in-out,2s)
+		}
+	}
+	}
+}

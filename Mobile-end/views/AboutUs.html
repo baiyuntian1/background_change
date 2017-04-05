@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <%include comm/head.html%>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="AboutUs">
+    <%include comm/top.html%>
+    <section class="central bao">
+        <section class="AboutUs_banner mar">
+            <ul class="pic_ul">
+                <li class="li1 selected"></li>
+                <li class="li2"></li>
+                <li class="li3"></li>
+            </ul>
+            <ul class="point_ul">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="company">
+            <p class="p1">
+                北京元吉科技有限公司，是致力于移动互联网精准营销服务，是移动互联网服务提供商。
+            </p>
+            <p class="p2">
+                当互联网跨界时代到来，我们开始思考用更多更有效并且快捷的手段，整合跨越更多传统资源，结合更能引起大众思考的方法，实现完成您的期望。
+            </p>
+        </section>
+        <section class="about_us">
+            <section class="guidelines">
+                我们的专业守则：让精准营销更加有效！
+            </section>
+            <section class="about">
+                <div class="merchants"></div>
+                <p class="p1">如何成为我们的商家？</p>
+                <p class="p2">为客户提供全方位传播服务。业务涉及<br>
+                   品牌建立、市场营销策略、创意设计、<br>
+                    品牌传播及推广、培训服务等内容
+                </p>
+                
+            </section>
+            <section class="about">
+                <div class="marketing"></div>
+                <p class="p1">我们的营销优势？</p>
+                <p class="p2">多通路的保障，PC商户平台+<br>
+                   手机营销通道，为企业提供更好的<br>
+                    营销宣传的选择
+                </p>
+                
+            </section>
+            <section class="about">
+                <div class="professional"></div>
+                <p class="p1">我们的专业程度？</p>
+                <p class="p2">
+                    当互联网跨界时代到来，我们开始思考用更多更有<br>
+                    效并且快捷的手段，整合跨越更多传统资源，<br>
+                    结合更能引起大众思考的方法，实现完成您的期望<br>
+                </p>
+            </section>
+        </section>
+        <%include comm/footer.html%>
+    </section>
+    
+    <script type="text/javascript" src="/inc/zepto.min.js"></script>
+    <script type="text/javascript" src="/inc/fx.js"></script>
+    <script type="text/javascript" src="/inc/fx_methods.js"></script>
+    <script type="text/javascript" src="/jq/userControl.js"></script>
+    <script type="text/javascript" src="/jq/landscape_mask.js"></script>
+    <script type="text/javascript" src="/jq/RotatingBanner.js"></script>
+    <script type="text/javascript" src="/jq/AboutUs.js"></script>
+    <script type="text/javascript" src="/jq/mobile_stop_moved.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var opt = {
+            selector: "section.bao", // 容器盒选择器（需要在样式表中将此盒定高），无默认值
+            scroll: true, // 盒内可滚动，默认true
+            resize_toWindow: true // 将容器盒自动设置为有效窗口高度(window.innerHeight)，并监听窗口大小改变——解决ios safari浏览器底部工具栏遮挡页面的问题
+        };
+        mobile_stop_moved.init(opt);
+        AboutUs.init();
+    });
+    </script>
+    
+    
+</body>
+</html>

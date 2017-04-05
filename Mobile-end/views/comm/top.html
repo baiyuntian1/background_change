@@ -1,0 +1,45 @@
+        
+        <section class="html_top">
+            <div class="top">
+                <div class="logo"></div>
+                <span class="button on"></span>
+            </div>
+            <ul>
+                <a <%if(menu==1){%>  <%}else{%> href="/"<%}%>>
+                    <li <%if(menu==1){%> class="first on" <%} else{%>class="first"<%}%>>
+                        <p><span class="li_span1"></span><span class="li_span2">首页</span><span class="li_span1"></span></p>
+                    </li>
+                </a>
+                <a <%if(menu==2){%>  <%}else{%> href="/AboutUs"<%}%>>
+                    <li <%if(menu==2){%> class="on" <%}%>>
+                        <p><span class="li_span1"></span><span class="li_span2">关于我们</span><span class="li_span1"></span></p>
+                    </li>
+                </a>
+                <a <%if(menu==3){%>  <%}else{%> href="/Product"<%}%>>
+                    <li <%if(menu==3){%> class="on" <%}%>>
+                        <p><span class="li_span1"></span><span class="li_span2">旗下产品</span><span class="li_span1"></span></p>
+                    </li>
+                </a>
+                <a <%if(menu==4){%>  <%}else{%> href="/Business"<%}%>>
+                    <li <%if(menu==4){%> class="on" <%}%>>
+                        <p><span class="li_span1"></span><span class="li_span2">商务合作</span><span class="li_span1"></span></p>
+                    </li>
+                </a>
+                <a <%if(menu==5){%>  <%}else{%> href="/Question"<%}%>>
+                    <li <%if(menu==5){%> class="on" <%}%>>
+                        <p><span class="li_span1"></span><span class="li_span2">常见问题</span><span class="li_span1"></span></p>
+                    </li>
+                </a>
+                <a <%if(menu==6){%>  <%}else{%> href="/Contact"<%}%>>
+                    <li <%if(menu==6){%> class="on" <%}%>>
+                        <p><span class="li_span1"></span><span class="li_span2">联系我们</span><span class="li_span1"></span></p>
+                    </li>
+                </a>
+                <a <%if(menu==7){%>  <%}else{%> href="/join_us"<%}%>>
+                    <li <%if(menu==7){%> class="on" <%}%>>
+                        <p><span class="li_span1"></span><span class="li_span2">加入我们</span><span class="li_span1"></span></p>
+                    </li>
+                </a>
+            </ul>
+        </section>
+        

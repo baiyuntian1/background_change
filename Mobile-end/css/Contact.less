@@ -1,0 +1,86 @@
+/*
+	*陈斌
+	*20160530
+	*联系我们页
+*/
+
+@import 'common.less';
+body.Contact{
+	section.bao{
+		height: 100vh;
+	}
+	section.middle{
+		border-top: 1px solid #bdb9b8;
+	    //文字样式
+		p{
+			margin: 5.4vw 4.7vw 1.6vw 6.3vw;
+		}
+		p.p1{
+			font-weight: bold;
+			line-height: 7.2vw;
+			font-size: 4vw;
+			color: #475168;
+	    }
+	    p.p2{
+	    	margin-top: 1.2vw;
+	    	line-height: 5.4vw;
+	    	font-size: 3.4vw;
+	    	color: #736f6e;
+	    	a {
+	    		line-height: 5.4vw;
+	    		font-size: 3.4vw;
+	    		color: @bg_color_nav;	
+	    	}
+	    }
+	    p.p3{
+            margin-top: 0.2vw;
+            line-height: 5.4vw;
+	    	font-size: 3.4vw;
+	    	color: #736f6e;
+	    }
+	    //图片样式
+	    div{
+	    	width: 87.4vw;
+	    	height: 50vw;
+	    	background:url("/images/contact_us_01.png") no-repeat;
+	    	background-size: 87.4vw 50vw;
+	    	margin:3.3vw auto 10vw;
+	    }
+	}
+	section.map {
+		width: 100vw;
+		height: 140vw;
+		position: absolute;
+		z-index: 11;
+		top:0;
+		left: 0;
+		display: none;
+		div.bg {
+			width: 100vw;
+			height: 140vw;
+			background: #000;
+			opacity: 0.8;
+		}
+		div.close {
+			position: absolute;
+			width: 10vw;
+			height: 10vh;
+			float: right;
+			right: 6.3vw;
+			top: 2.5vh;
+			font-size: 10vw;
+			line-height: 10vh;
+			text-align: center;
+			color: @color_fff;
+		}
+		div#baidu_map{
+			position: absolute;
+			top: 15vh;
+			left: 0;
+			width:87.4vw;
+			height:70vh;
+			margin-left: 6.3vw;
+			margin-bottom: 15vw;
+		}
+	}
+}

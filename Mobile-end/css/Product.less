@@ -1,0 +1,95 @@
+/*
+	*陈斌
+	*20160530
+	*旗下产品页
+*/
+body.Product{
+	section.bao{
+		height: 100vh;
+	}
+	//顶部banner样式
+	section.banner{
+		width: 100vw;
+		height: 61.6vw;
+		background: url("/images/product_banner_bg.png") no-repeat;
+		overflow: hidden;
+		ul.pic_ul{
+            position: relative;
+            left: 0px;
+		}
+		ul.pic_ul li{
+			width: 100vw;
+			height: 61.6vw;
+			line-height: 61.6vw;
+			text-align: center;
+			float: left;
+	    }
+	    ul.pic_ul li.li1 .p1{
+	    	line-height: 5.4vw;
+	    	font-size: 3.4vw;
+	    	margin-top: 13.1vw;
+	    	color: @color_fff;
+	    }
+	    ul.pic_ul li.li1 .p2{
+	    	line-height: 7.2vw;
+	    	font-weight: bold;
+	    	font-size: 4.0vw;
+	    	margin-top: 4.1vw;
+	    	color: @color_fff;
+	    }
+	    ul.pic_ul li.li2{
+	    	background: url("/images/product_banner_01.png") no-repeat;
+	    	background-size:65.9vw 53.6vw;
+	    	background-position: center bottom;
+	    }
+	}
+    //定制文章或者h5样式
+    section.customized{
+    	margin-top: 7.5vw;
+    	p{
+    		text-align: center;
+    	}
+    	p.p1{
+    		line-height: 5.6vw;
+    		font-size: 3.4vw;
+    		color: #736f6e;
+    	}
+    	p.p2{
+    		margin-top: 5.4vw;
+    		line-height: 5vw;
+    		font-weight: bold;
+    		font-size: 4vw;
+    	}
+    	.bg(@counts) when (@counts<4){
+	        .bg((@counts+1));
+	        div.div@{counts}{
+	        	margin-top: 11.9vw;
+	        	width: 100vw;
+	        	height: 81.5vw;
+				background: url("/images/customized_0@{counts}.png") no-repeat;
+				background-position: center bottom;
+				background-size: 51.3vw 81.5vw;
+			}
+		}
+		.bg(1);
+    	div.div1{
+    		margin-top: 8vw;
+    	}
+    	div.btn{
+    		width: 35.4vw;
+    		height: 10.8vw;
+    		margin: 0 auto;
+    		background-color: #ff6c60;
+    		margin-top: 14.5vw;
+    		margin-bottom: 15.4vw;
+    		border-radius: 0.25vw;
+    		p{
+    			color: @color_fff;
+    			line-height: 2.8vw;
+    			font-size: 3.8vw;
+    			height: 10.8vw;
+    			line-height: 10.8vw;
+    		}
+    	}
+    }
+}
